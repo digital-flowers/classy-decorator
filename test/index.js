@@ -8,7 +8,9 @@ import classy from "../lib/index";
 
 @classy()
 class IamClassy {
-    constructor() {
+    constructor(a, b) {
+        this.a = a;
+        this.b = b;
         console.log("IamClassy Instance!");
     }
 }
@@ -19,7 +21,9 @@ class IamClassy {
 
 
 describe('decorator', () => {
-    it("create an instance from class with `new` keyword is passed through", () => assert(new IamClassy() instanceof IamClassy));
+    it("create an instance from class with `new` keyword", () => assert(new IamClassy() instanceof IamClassy));
 
-    it("create an instance from class without `new` keyword is passed through", () => assert(IamClassy() instanceof IamClassy));
+    it("create an instance from class without `new` keyword", () => assert(IamClassy() instanceof IamClassy));
+
+    it("passing constructor arguments", () => assert(IamClassy(1, 2).b === 2));
 });
