@@ -1,8 +1,12 @@
 # classy-decorator
 Create an instance from your javascript class without `new` keyword because this is more classy ;)
 
+install
+
+```bash
+npm i classy-decorator --save
+```
 very easy to use
- 
 ```javascript
 import classy from "classy-decorator";
 
