@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "compile": "babel -d lib/ src/",
-    "test": "npm run compile && mocha --compilers js:babel-core/register"
+    "test": "npm run compile && mocha --compilers js:babel-core/register",
     "publish": "npm publish",
     "prepublish": "npm run compile"
   },
