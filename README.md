@@ -4,7 +4,7 @@ Create an instance from your javascript class without `new` keyword because this
 very easy to use
  
 ```javascript
-import classy from "classy";
+import classy from "classy-decorator";
 
 @classy()
 class IamClassy {
