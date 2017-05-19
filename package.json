@@ -1,6 +1,6 @@
 {
   "name": "classy-decorator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Create an instance of your javascript class without `new` keyword because this is more classy ;)",
   "main": "lib/index.js",
   "scripts": {
